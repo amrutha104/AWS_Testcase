@@ -1,0 +1,63 @@
+{
+    "ManagedPolicy": "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
+    "InlinePolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ec2:CreateVpc",
+                    "ec2:DeleteVpc",
+                    "ec2:DescribeVpcs",
+                    "ec2:CreateSubnet",
+                    "ec2:DeleteSubnet",
+                    "ec2:DescribeSubnets",
+                    "ec2:ModifyVpcAttribute",
+                    "ec2:ModifySubnetAttribute",
+                    "ec2:DescribeVpcAttribute",
+                    "ec2:DescribeNetworkAcls",
+                    "ec2:CreateTags",
+                    "ec2:DeleteTags",
+                    "ec2:CreateInternetGateway",
+                    "ec2:DeleteInternetGateway",
+                    "ec2:DescribeInternetGateways",
+                    "ec2:AttachInternetGateway",
+                    "ec2:DetachInternetGateway",
+                    "ec2:CreateVpcPeeringConnection",
+                    "ec2:DeleteVpcPeeringConnection",
+                    "ec2:DescribeVpcPeeringConnections",
+                    "ec2:AcceptVpcPeeringConnection",
+                    "ec2:RejectVpcPeeringConnection",
+                    "ec2:DescribeAvailabilityZones",
+                    "ec2:DescribeSecurityGroups",
+                    "ec2:DescribeNetworkInterfaces",
+                    "ec2:DescribeVpcEndpoints",
+                    "ec2:DescribePrefixLists",
+                    "ec2:DescribeNatGateways",
+                    "ec2:DescribeVpnConnections",
+                    "ec2:DescribeVpnGateways",
+                    "ec2:DescribeTransitGateways",
+                    "ec2:DescribeAddresses",
+                    "ec2:DescribeFlowLogs",
+                    "ec2:DescribeDhcpOptions",
+                    "ec2:DescribeRouteTables",
+                    "ec2:DescribeEgressOnlyInternetGateways",
+                    "ec2:CreateRoute",
+                    "ec2:DeleteRoute",
+                    "ec2:DescribeAccountAttributes",
+                    "ec2:AllocateAddress",
+                    "ec2:CreateNatGateway",
+                    "ec2:DeleteNatGateway",
+                    "ec2:DescribeNatGateways",
+                    "ec2:ModifyNatGatewayAttribute",
+                    "ec2:CreateTags",
+                    "ec2:DeleteTags",
+                    "ec2:DescribeTags",
+                    "ec2:AllocateAddress",
+                    "ec2:ReleaseAddress"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }
+}
