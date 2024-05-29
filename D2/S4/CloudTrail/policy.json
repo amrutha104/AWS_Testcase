@@ -1,0 +1,19 @@
+{
+    "ManagedPolicy": "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
+    "InlinePolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "cloudwatch:*",
+                    "sns:ListTopics",
+                    "sns:CreateTopic",
+                    "s3:*",
+                    "cloudtrail:*"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }
+}

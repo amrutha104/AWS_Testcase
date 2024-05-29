@@ -1,0 +1,35 @@
+{    "ManagedPolicy": "arn:aws:iam::aws:policy/IAMFullAccess",
+    "InlinePolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "Stmt1694406185867",
+                "Action": "config:*",
+                "Effect": "Allow",
+                "Resource": "*"
+            },
+            {
+                "Sid": "Stmt1694406293157",
+                "Action": [
+                    "config:PutRemediationConfigurations",
+                    "config:PutRemediationExceptions",
+                    "config:StartRemediationExecution"
+                ],
+                "Effect": "Deny",
+                "Resource": "*"
+            },
+            {
+                "Sid": "Stmt1709103059534",
+                "Action": "iam:*",
+                "Effect": "Allow",
+                "Resource": "*"
+            },
+            {
+                "Sid": "Stmt1694407283185",
+                "Action": "s3:*",
+                "Effect": "Allow",
+                "Resource": "*"
+            }
+        ]
+    }
+}
