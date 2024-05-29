@@ -1,0 +1,32 @@
+{
+    "ManagedPolicy": "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
+    "InlinePolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Sid": "Stmt1709795336191",
+            "Action": "ec2:*",
+            "Effect": "Allow",
+            "Resource": "*"
+          },
+          {
+            "Sid": "Stmt1709795476418",
+            "Action": "route53:*",
+            "Effect": "Allow",
+            "Resource": "*"
+          },
+          {
+            "Sid": "Stmt1709795488530",
+            "Action": "arc-zonal-shift:*",
+            "Effect": "Allow",
+            "Resource": "*"
+          },
+          {
+            "Sid": "Stmt1709795506369",
+            "Action": "vpc-lattice:*",
+            "Effect": "Allow",
+            "Resource": "*"
+          }
+        ]
+      }
+}
